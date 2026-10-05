@@ -1,0 +1,40 @@
+{
+  "steps": [
+    {"op": "launch", "argv": [".venv\\Scripts\\python.exe", "run.py", "build\\gui\\multi_site.drawx"], "cwd": "D:\\ai\\project\\draw", "wait": 6.0},
+    {"op": "shot", "window": "标注工坊", "out": "build\\gui\\p1_open.png", "refresh": true},
+
+    {"op": "drag", "x1": 335, "y1": 310, "x2": 395, "y2": 272, "steps": 14},
+    {"op": "shot", "out": "build\\gui\\p2_moved.png"},
+
+    {"op": "click", "x": 28, "y": 167},
+    {"op": "drag", "x1": 300, "y1": 240, "x2": 520, "y2": 368, "steps": 16},
+    {"op": "shot", "out": "build\\gui\\p3_cropped.png"},
+    {"op": "click", "x": 28, "y": 127},
+
+    {"op": "click", "x": 1140, "y": 693},
+    {"op": "click", "x": 200, "y": 40},
+    {"op": "click", "x": 232, "y": 300},
+    {"op": "shot", "out": "build\\gui\\p4_hidden.png"},
+
+    {"op": "click", "x": 1140, "y": 741},
+    {"op": "click", "x": 200, "y": 40},
+    {"op": "click", "x": 232, "y": 325},
+    {"op": "drag", "x1": 1307, "y1": 874, "x2": 1195, "y2": 874, "steps": 12},
+    {"op": "shot", "out": "build\\gui\\p5_locked_opacity.png"},
+
+    {"op": "click", "x": 1140, "y": 717},
+    {"op": "click", "x": 200, "y": 40},
+    {"op": "click", "x": 197, "y": 240},
+    {"op": "shot", "out": "build\\gui\\p6_reorder.png"},
+
+    {"op": "click", "x": 30, "y": 40},
+    {"op": "click", "x": 82, "y": 160},
+    {"op": "sleep", "seconds": 1.5},
+    {"op": "shot", "out": "build\\gui\\p7_saved.png"},
+
+    {"op": "click", "x": 30, "y": 40},
+    {"op": "click", "x": 48, "y": 273},
+    {"op": "sleep", "seconds": 1.5},
+    {"op": "waitgone"}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "steps": [
+    {"op": "launch", "argv": ["build\\dist\\DrawX.exe", "build\\gui\\multi_site.drawx"], "cwd": "D:\\ai\\project\\draw", "wait": 8.0},
+    {"op": "click", "x": 1140, "y": 669},
+    {"op": "click", "x": 200, "y": 40},
+    {"op": "click", "x": 232, "y": 300},
+    {"op": "click", "x": 30, "y": 40},
+    {"op": "click", "x": 82, "y": 160},
+    {"op": "sleep", "seconds": 2.0},
+    {"op": "shot", "window": "标注工坊", "out": "build\\gui\\x4_exe_saved.png", "refresh": true},
+    {"op": "click", "x": 30, "y": 40},
+    {"op": "sleep", "seconds": 0.4},
+    {"op": "shot", "out": "build\\gui\\x5_menu.png"},
+    {"op": "click", "x": 48, "y": 273},
+    {"op": "sleep", "seconds": 2.5},
+    {"op": "waitgone"}
+  ]
+}

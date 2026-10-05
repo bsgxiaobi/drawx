@@ -1,0 +1,32 @@
+[
+  {"op": "kill", "name": "pythonw.exe"},
+  {"op": "sleep", "seconds": 1},
+  {"op": "launch", "argv": [".venv\\Scripts\\pythonw.exe", "run.py", "build\\gui\\sample_screenshot.png"], "wait": 4.5},
+  {"op": "resize", "window": "标注工坊", "x": 60, "y": 60, "w": 1400, "h": 920, "after": 0.8},
+
+  {"op": "key", "key": "r", "after": 0.4},
+  {"op": "drag", "x1": 300, "y1": 300, "x2": 640, "y2": 392, "steps": 14, "after": 0.4},
+  {"op": "key", "key": "a", "after": 0.4},
+  {"op": "drag", "x1": 700, "y1": 560, "x2": 930, "y2": 665, "steps": 14, "after": 0.4},
+  {"op": "key", "key": "b", "after": 0.4},
+  {"op": "drag", "x1": 250, "y1": 350, "x2": 425, "y2": 380, "steps": 14, "after": 0.4},
+  {"op": "key", "key": "t", "after": 0.4},
+  {"op": "click", "x": 200, "y": 645, "after": 0.5},
+  {"op": "text", "text": "重点核对这一行", "after": 0.4},
+  {"op": "key", "key": "escape", "after": 0.4},
+  {"op": "key", "key": "v", "after": 0.4},
+  {"op": "shot", "out": "build/gui/v1_drawn.png", "after": 0.2},
+
+  {"op": "key", "key": "ctrl+z", "real": true, "after": 0.4},
+  {"op": "key", "key": "ctrl+z", "real": true, "after": 0.4},
+  {"op": "key", "key": "ctrl+z", "real": true, "after": 0.4},
+  {"op": "shot", "out": "build/gui/v2_undo3.png", "after": 0.2},
+  {"op": "key", "key": "ctrl+y", "real": true, "after": 0.4},
+  {"op": "key", "key": "ctrl+y", "real": true, "after": 0.4},
+  {"op": "key", "key": "ctrl+y", "real": true, "after": 0.4},
+  {"op": "shot", "out": "build/gui/v3_redo3.png", "after": 0.2},
+
+  {"op": "key", "key": "ctrl+s", "real": true, "after": 2.0},
+  {"op": "list", "after": 0.0},
+  {"op": "shot", "window": "保存工程", "refresh": true, "out": "build/gui/v4_savedlg.png", "after": 0.3}
+]

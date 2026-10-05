@@ -1,0 +1,17 @@
+[
+  {"op": "click", "window": "标注工坊", "x": 30, "y": 128, "after": 0.4},
+  {"op": "click", "x": 500, "y": 320, "after": 0.5},
+  {"op": "shot", "out": "build/gui/s7_select_rect.png", "after": 0.3},
+
+  {"op": "click", "x": 1242, "y": 218, "after": 0.5},
+  {"op": "drag", "x1": 1157, "y1": 347, "x2": 1255, "y2": 347, "steps": 10, "after": 0.5},
+  {"op": "shot", "out": "build/gui/s8_restyle.png", "after": 0.3},
+
+  {"op": "click", "x": 247, "y": 77, "after": 0.4},
+  {"op": "click", "x": 247, "y": 77, "after": 0.4},
+  {"op": "shot", "out": "build/gui/s9_undo2.png", "after": 0.3},
+
+  {"op": "click", "x": 355, "y": 77, "after": 0.4},
+  {"op": "click", "x": 355, "y": 77, "after": 0.4},
+  {"op": "shot", "out": "build/gui/s10_redo2.png", "after": 0.3}
+]

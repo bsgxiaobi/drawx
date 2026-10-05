@@ -1,0 +1,12 @@
+{
+  "steps": [
+    {"op": "launch", "argv": [".venv\\Scripts\\python.exe", "run.py", "build\\gui\\multi_site.drawx"], "cwd": "D:\\ai\\project\\draw", "wait": 8.0},
+    {"op": "sleep", "seconds": 1.0},
+    {"op": "shot", "window": "标注工坊", "refresh": true, "out": "build\\gui\\cs0_main.png"},
+    {"op": "click", "x": 247, "y": 40},
+    {"op": "shot", "out": "build\\gui\\cs1_menu.png"},
+    {"op": "click", "x": 262, "y": 73},
+    {"op": "sleep", "seconds": 1.0},
+    {"op": "shot", "window": "画布大小", "refresh": true, "out": "build\\gui\\cs2_dialog.png"}
+  ]
+}

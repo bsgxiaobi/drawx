@@ -1,0 +1,10 @@
+{
+  "steps": [
+    {"op": "shot", "window": "画布大小", "refresh": true, "out": "build\\gui\\cs2_dialog.png"},
+    {"op": "click", "x": 247, "y": 154},
+    {"op": "shot", "out": "build\\gui\\cs3_ratio169.png"},
+    {"op": "click", "x": 238, "y": 211},
+    {"op": "sleep", "seconds": 1.0},
+    {"op": "shot", "window": "标注工坊", "refresh": true, "out": "build\\gui\\cs4_applied.png"}
+  ]
+}

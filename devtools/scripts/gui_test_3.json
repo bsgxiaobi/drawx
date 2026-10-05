@@ -1,0 +1,27 @@
+[
+  {"op": "kill", "name": "pythonw.exe"},
+  {"op": "sleep", "seconds": 1},
+  {"op": "launch", "argv": [".venv\\Scripts\\pythonw.exe", "run.py", "build\\gui\\sample_screenshot.png"], "wait": 4.0},
+  {"op": "resize", "window": "标注工坊", "x": 60, "y": 60, "w": 1400, "h": 920, "after": 0.8},
+
+  {"op": "key", "key": "r", "after": 0.5},
+  {"op": "shot", "out": "build/gui/t1_rect_tool.png", "after": 0.2},
+
+  {"op": "drag", "x1": 300, "y1": 300, "x2": 600, "y2": 400, "steps": 14, "after": 0.4},
+  {"op": "key", "key": "v", "after": 0.4},
+  {"op": "click", "x": 450, "y": 350, "after": 0.5},
+  {"op": "shot", "out": "build/gui/t2_selected.png", "after": 0.2},
+
+  {"op": "drag", "x1": 600, "y1": 400, "x2": 740, "y2": 490, "steps": 14, "after": 0.4},
+  {"op": "shot", "out": "build/gui/t3_resized.png", "after": 0.2},
+
+  {"op": "key", "key": "a", "after": 0.4},
+  {"op": "drag", "x1": 700, "y1": 560, "x2": 900, "y2": 650, "steps": 14, "after": 0.4},
+
+  {"op": "key", "key": "c", "after": 0.4},
+  {"op": "drag", "x1": 200, "y1": 200, "x2": 850, "y2": 620, "steps": 14, "after": 0.5},
+  {"op": "shot", "out": "build/gui/t4_crop.png", "after": 0.2},
+
+  {"op": "key", "key": "v", "after": 0.4},
+  {"op": "shot", "out": "build/gui/t5_final.png", "after": 0.2}
+]

@@ -1,0 +1,20 @@
+[
+  {"op": "click", "window": "标注工坊", "x": 30, "y": 208, "after": 0.4},
+  {"op": "drag", "x1": 200, "y1": 296, "x2": 900, "y2": 348, "steps": 14, "after": 0.4},
+  {"op": "shot", "out": "build/gui/s2_rect.png", "after": 0.3},
+
+  {"op": "click", "x": 30, "y": 364, "after": 0.4},
+  {"op": "drag", "x1": 430, "y1": 430, "x2": 620, "y2": 470, "steps": 14, "after": 0.4},
+  {"op": "shot", "out": "build/gui/s3_arrow.png", "after": 0.3},
+
+  {"op": "click", "x": 30, "y": 558, "after": 0.4},
+  {"op": "drag", "x1": 250, "y1": 353, "x2": 400, "y2": 375, "steps": 14, "after": 0.4},
+  {"op": "shot", "out": "build/gui/s4_mosaic.png", "after": 0.3},
+
+  {"op": "click", "x": 30, "y": 480, "after": 0.4},
+  {"op": "click", "x": 200, "y": 640, "after": 0.5},
+  {"op": "text", "text": "这一行需要重点核对", "after": 0.4},
+  {"op": "shot", "out": "build/gui/s5_typing.png", "after": 0.3},
+  {"op": "key", "key": "escape", "after": 0.4},
+  {"op": "shot", "out": "build/gui/s6_text_done.png", "after": 0.3}
+]

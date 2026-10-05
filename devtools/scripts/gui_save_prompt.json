@@ -1,0 +1,14 @@
+{
+  "steps": [
+    {"op": "shot", "window": "标注工坊", "refresh": true, "out": "build\\gui\\z0_ready.png"},
+    {"op": "click", "x": 1140, "y": 669},
+    {"op": "click", "x": 200, "y": 40},
+    {"op": "click", "x": 232, "y": 300},
+    {"op": "shot", "out": "build\\gui\\z1_changed.png"},
+    {"op": "click", "x": 30, "y": 40},
+    {"op": "click", "x": 48, "y": 273},
+    {"op": "sleep", "seconds": 1.5},
+    {"op": "shot", "full": true, "out": "build\\gui\\z2_prompt_full.png"},
+    {"op": "list"}
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "steps": [
+    {"op": "launch", "argv": [".venv\\Scripts\\python.exe", "run.py", "build\\gui\\multi_site.drawx"], "cwd": "D:\\ai\\project\\draw", "wait": 6.0},
+    {"op": "shot", "window": "标注工坊", "out": "build\\gui\\m1_open.png", "refresh": true}
+  ]
+}
