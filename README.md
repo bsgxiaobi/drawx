@@ -240,6 +240,9 @@ Remove-Item Env:\QT_QPA_PLATFORM
 
 # 打包产物自检（会短暂弹窗，结果写文件）
 build\dist\DrawX.exe --selftest build\smoke\selftest_exe.json
+
+# 文档体检：README 与 docs/ 的相对链接是否可达、表格列数是否一致
+.venv\Scripts\python.exe devtools\check_docs.py
 ```
 
 `devtools/screen_agent.py` 是一个**零插件**的 Windows GUI 操控工具（纯 ctypes + Pillow）。
@@ -268,6 +271,7 @@ $A = ".venv\Scripts\python.exe devtools\screen_agent.py"
 | `devtools/dialog_shot.py` | 把提示框 / 输入框渲染成图片，验收文案（模态框也能截，真实平台中文才准） |
 | `devtools/icon_sheet.py` · `icon_variants.py` · `icon_metrics.py` | 图标对照图 / 参数并排比较 / 墨迹重心测量（改图标必看） |
 | `devtools/drag_source.py` · `make_sample.py` | 可被拖出去的真实 OLE 拖放源窗口 / 生成「像截图」的测试素材 |
+| `devtools/check_docs.py` | README 与 `docs/` 的结构体检：相对链接可达、表格列数一致、围栏配对 |
 | `tests/probe_platform.py` | 最小探针：确认当前平台能建窗口、系统字体可用 |
 
 大量 bug 是把它真跑起来点出来的（图标缩成 1 像素、拖放被 viewport 吃掉、输入法吞掉 `Ctrl+Shift`……），
